@@ -5,7 +5,7 @@
 // Input: arr = [4,2,0,10,8,30], target = 8
 // Output: 4
 
-const getTargetElementIndex = (arr: number[], target: number) => {
+const getTargetElementIndex = (arr, target) => {
 	for (let i = 0; i < arr.length; i++) {
 		if (arr[i] === target) {
 			return i;
@@ -19,4 +19,4 @@ const arr = [4, 2, 0, 10, 8, 30];
 const target = 30;
 
 const ans = getTargetElementIndex(arr, target);
-console.log(ans);
+console.log("ans:", ans);
