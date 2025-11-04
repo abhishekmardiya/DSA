@@ -1,4 +1,9 @@
-// Given an array of numbers, count how many values are negative. A negative value is any number less than zero. Return the total count of negative numbers present in the array. If the array has no negative values, return zero.
+// Loops 02
+
+// Given an array, return the total number of negative elements in the array. If the array contains no negative values, return 0.
+
+// Input: arr = [2, -9, 17, -12, 1, -10, -4, 8, -Infinity]
+// Output: 5
 
 const countNegatives = (arr) => {
 	let count = 0;

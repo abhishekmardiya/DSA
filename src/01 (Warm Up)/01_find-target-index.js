@@ -1,6 +1,6 @@
 // Loops 02
 
-// Given an array of numbers and a target number, write a TypeScript function that searches the array and returns the index of the target value. If the target value is not found in the array, return -1.
+// Given an array and a target value, return the index where the target appears in the array. If the target does not exist in the array, return -1.
 
 // Input: arr = [4,2,0,10,8,30], target = 8
 // Output: 4
