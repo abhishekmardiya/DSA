@@ -20,3 +20,6 @@ const target = 30;
 
 const ans = getTargetElementIndex(arr, target);
 console.log("ans:", ans);
+
+// Time complexity: O(n)
+// Space complexity: O(1)

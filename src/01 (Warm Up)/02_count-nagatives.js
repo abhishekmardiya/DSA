@@ -21,3 +21,6 @@ const arr = [2, -9, 17, -12, 1, -10, -4, 8, -Infinity];
 
 const ans = countNegatives(arr);
 console.log("ans:", ans);
+
+// Time complexity: O(n)
+// Space complexity: O(1)

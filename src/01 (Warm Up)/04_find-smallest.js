@@ -8,7 +8,8 @@
 const findSmallest = (arr) => {
 	let smallest = arr[0]; // or let smallest = Infinity;
 
-	for (let i = 0; i < arr.length; i++) {
+	// Starting the loop from i = 1 (instead of 0) after initializing largest = arr[0] to avoid the redundant first comparison.
+	for (let i = 1; i < arr.length; i++) {
 		if (arr[i] < smallest) {
 			smallest = arr[i];
 		}
@@ -21,3 +22,6 @@ const arr = [5, 0, 7, -10, -8, 17, 1];
 
 const ans = findSmallest(arr);
 console.log("ans:", ans);
+
+// Time complexity: O(n)
+// Space complexity: O(1)
