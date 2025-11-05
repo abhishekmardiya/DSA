@@ -2,8 +2,8 @@
 
 // Given an array, return the smallest number present in the array.
 
-// Input: arr = [5, 0, 7, 10, 8, 17, 1];
-// Output: 17
+// Input: arr = [5, 0, 7, -10, -8, 17, 1];
+// Output: -10
 
 const findSmallest = (arr) => {
 	let smallest = arr[0]; // or let smallest = Infinity;

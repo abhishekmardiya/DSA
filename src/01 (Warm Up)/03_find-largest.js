@@ -2,7 +2,7 @@
 
 // Given an array, return the largest number present in the array.
 
-// Input: arr = [5, 0, 7, 10, 8, 17, 1];
+// Input: arr = [5, 0, 7, -10, -8, 17, 1];
 // Output: 17
 
 const findLargest = (arr) => {
