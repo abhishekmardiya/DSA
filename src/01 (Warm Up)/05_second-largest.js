@@ -33,3 +33,17 @@ console.log("ans:", ans);
 
 // Time complexity: O(n)
 // Space complexity: O(1)
+
+/*
+Que. 
+Why not simply sort the array and take the second element?
+const ans = [...new Set(arr)]?.sort((a, b) => b - a)[1]; // Set is for remove the duplicates
+
+Ans. 
+Sorting with `.sort()` works, but it's less efficient.
+`.sort()` is O(n log n), while the single pass solution is O(n).
+
+
+Time complexity: O(n log n) // creating set and sorting
+Space complexity: O(n) // creating a new array copy
+*/
