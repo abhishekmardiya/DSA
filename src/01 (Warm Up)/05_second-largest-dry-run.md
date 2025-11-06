@@ -14,4 +14,3 @@
 | 8   | 12           | 10            |
 
 **Final second largest = 10**
-x
