@@ -44,6 +44,6 @@ Sorting with `.sort()` works, but it's less efficient.
 `.sort()` is O(n log n), while the single pass solution is O(n).
 
 
-Time complexity: O(n log n) // creating set and sorting
-Space complexity: O(n) // creating a new array copy
+Time complexity: O(n log n) -->  creating set and sorting
+Space complexity: O(n) --> creating a new array copy
 */
