@@ -36,7 +36,7 @@ console.log("ans:", ans);
 
 /*
 Que. 
-Why not simply sort the array and take the second element?
+Why not simply sort the array and take the second last element?
 const ans = [...new Set(arr)]?.sort((a, b) => b - a)[1]; // Set is for remove the duplicates
 
 Ans. 
