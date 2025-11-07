@@ -1,6 +1,6 @@
 // Star Pattern
 
-// Given rows and cols, print a rectangle made of * characters where each row contains cols stars and the total number of printed lines equals rows.
+// Given rows and cols, print a square made of * characters where each row contains cols stars and the total number of printed lines equals rows.
 
 // Input: n=4 (rows and columns)
 // output:
