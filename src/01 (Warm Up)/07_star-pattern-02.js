@@ -1,6 +1,6 @@
 // Star Pattern
 
-// Print the following star pattern of size n:
+// Print the following star pattern of size n
 
 // Input: n=4 (rows and columns)
 // *
