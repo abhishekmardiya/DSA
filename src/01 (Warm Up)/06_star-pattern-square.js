@@ -16,7 +16,9 @@ const generatePattern = (n) => {
 			row = `${row} *`;
 		}
 
-		console.log(row);
+		// trim() itself is O(k) where k = length of that row string — but that row string is already being built char by char inside your inner loop anyway.
+		// so adding trim does not change the Big-O at all.
+		console.log(row.trim());
 	}
 };
 
