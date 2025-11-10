@@ -1,5 +1,7 @@
 ### Dry Run - Second Largest Element
 
+**Input: [5, 0, 7, -10, -8, 17, 1]**
+
 | i   | firstLargest | secondLargest |
 | --- | ------------ | ------------- |
 |     | -∞           | -∞            |

@@ -6,16 +6,17 @@
 // output: 3
 
 const countDigit = (num) => {
-	if (num === 0) {
-		return 1;
-	}
-
 	// Math.abs() --> Returns the absolute value of a number, converting negatives to positives.
 	// Examples:
 	// Math.abs(-123) → 123
 	// Math.abs(123) → 123
-
+	// Math.abs(0) → 0
 	num = Math.abs(num);
+
+	if (num === 0) {
+		return 1;
+	}
+
 	let count = 0;
 	while (num > 0) {
 		// Math.floor() --> Rounds a number down to the nearest integer (removes the decimal part).
