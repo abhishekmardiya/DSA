@@ -5,13 +5,20 @@
 // Input: 259
 // output: 3
 
+// Test Cases:
+// Input: 0 --> output: 1
+// Input: -259 --> output: 3
+
 const countDigit = (num) => {
+	if (num === 0) {
+		return 1;
+	}
+
 	// Math.abs() --> Returns the absolute value of a number, converting negatives to positives.
 	// Examples:
 	// Math.abs(-123) → 123
 	// Math.abs(123) → 123
 	// Math.abs(0) → 0
-	// Math.abs(11.5) → 11.5
 	num = Math.abs(num);
 
 	let count = 0;
@@ -29,7 +36,7 @@ const countDigit = (num) => {
 	return count;
 };
 
-const num = 259;
+const num = 0;
 
 const ans = countDigit(num);
 console.log("ans:", ans);
