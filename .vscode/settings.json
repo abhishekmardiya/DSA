@@ -14,7 +14,6 @@
   "[javascript]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
-  "editor.tabCompletion": "off",
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
