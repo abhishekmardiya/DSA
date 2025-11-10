@@ -1,6 +1,6 @@
 # DSA
 
-This project contains various data structures and algorithms implemented in JavaScript. It serves as a practice repository for learning and mastering fundamental programming concepts.
+This project contains various data structures and algorithms implemented in JavaScript.
 
 ## 📚 Problems
 
