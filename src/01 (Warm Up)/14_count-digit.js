@@ -13,10 +13,6 @@ const countDigit = (num) => {
 	// Math.abs(0) → 0
 	num = Math.abs(num);
 
-	if (num === 0) {
-		return 1;
-	}
-
 	let count = 0;
 	while (num > 0) {
 		// Math.floor() --> Rounds a number down to the nearest integer (removes the decimal part).
