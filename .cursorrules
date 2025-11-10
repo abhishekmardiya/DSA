@@ -1,0 +1,8 @@
+Git commit messages should be short and concise.
+
+Use "problem" word instead of "implementation" in git commit messages.
+
+For example:
+- "add greedy algorithm problem" instead of "implement greedy algorithm"
+- "add binary search problem" instead of "implement binary search"
+
