@@ -3,6 +3,7 @@
 // Print the following star pattern of size n
 
 // Input: n=4 (rows and columns)
+// output:
 // *
 // * *
 // * * *
@@ -11,6 +12,7 @@
 const generatePattern = (n) => {
 	for (let i = 0; i < n; i++) {
 		let row = "";
+
 		for (let j = 0; j <= i; j++) {
 			row = `${row} *`;
 		}

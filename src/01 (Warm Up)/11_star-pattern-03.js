@@ -3,6 +3,7 @@
 // Print the following number pattern of size n
 
 // Input: n=5 (rows and columns)
+// output:
 //     		*
 // 		  * *
 //	    * * *
@@ -12,6 +13,7 @@
 const generatePattern = (n) => {
 	for (let i = 0; i < n; i++) {
 		let row = "";
+
 		for (let j = n; j > 0; j--) {
 			row = `${row} ${j > i + 1 ? " " : "*"}`;
 		}
