@@ -21,6 +21,8 @@ This project contains various data structures and algorithms implemented in Java
 | 11  | Star Pattern - 03   |
 | 12  | Number Pattern - 04 |
 | 13  | Number Pattern - 05 |
+| 14  | Count Digit         |
+| 15  | Palindrome          |
 
 ## 📝 Notes
 
