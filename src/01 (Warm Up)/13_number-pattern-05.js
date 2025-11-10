@@ -7,18 +7,9 @@
 // 0 1
 // 0 1 0
 // 1 0 1 0
-// 0 1 0 1 0
+// 1 0 1 0 1
 
-const generatePattern = (n) => {
-	for (let i = 0; i < n; i++) {
-		let row = "";
-		for (let j = 0; j < i + 1; j++) {
-			row = `${row} ${j % 2 === 0 ? 1 : 0}`;
-		}
-
-		console.log(row);
-	}
-};
+const generatePattern = (n) => {};
 
 const n = 5;
 generatePattern(n);
