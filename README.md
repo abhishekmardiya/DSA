@@ -32,6 +32,16 @@ This project contains various data structures and algorithms implemented in Java
 
 ## 🧪 Test Suite
 
+All problems have comprehensive test cases covering:
+
+- Basic functionality
+- Edge cases
+- Boundary conditions
+- Error handling
+- Multiple scenarios
+
+This project uses [Vitest](https://vitest.dev/), a fast and modern testing framework.
+
 ### Run all tests
 
 ```bash
@@ -49,17 +59,3 @@ npm run test:watch
 ```bash
 npm run test:coverage
 ```
-
-## Test Coverage
-
-All problems have comprehensive test cases covering:
-
-- Basic functionality
-- Edge cases
-- Boundary conditions
-- Error handling
-- Multiple scenarios
-
-## Test Library
-
-This project uses [Vitest](https://vitest.dev/), a fast and modern testing framework built on Vite.
