@@ -10,7 +10,7 @@ const findSecondLargest = (arr) => {
 	let secondLargest = -Infinity;
 
 	if (arr.length < 2) {
-		return "Array should have atleast 2 elements";
+		return "Array should have at least 2 elements";
 	}
 
 	for (let i = 0; i < arr.length; i++) {
