@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { getTargetElementIndex } from "../../../src/01 (Warm Up)/01_find-target-index.js";
+import { getTargetElementIndex } from "../../../src/01-warm-up/01_find-target-index.js";
 
 describe("getTargetElementIndex", () => {
 	it("should return the index when target is found in the array", () => {
