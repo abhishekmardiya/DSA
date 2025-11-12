@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { findSmallest } from "../../../src/01 (Warm Up)/04_find-smallest.js";
+import { findSmallest } from "../../../src/01-warm-up/04_find-smallest.js";
 
 describe("findSmallest", () => {
 	it("should return the smallest number in the array", () => {

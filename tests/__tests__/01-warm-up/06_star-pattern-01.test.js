@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { generatePattern } from "../../../src/01 (Warm Up)/06_star-pattern-01.js";
+import { generatePattern } from "../../../src/01-warm-up/06_star-pattern-01.js";
 
 describe("generatePattern - Star Pattern 01", () => {
 	it("should generate correct pattern for n=4", () => {

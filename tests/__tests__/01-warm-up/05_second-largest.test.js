@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { findSecondLargest } from "../../../src/01 (Warm Up)/05_second-largest.js";
+import { findSecondLargest } from "../../../src/01-warm-up/05_second-largest.js";
 
 describe("findSecondLargest", () => {
 	it("should return the second largest number in the array", () => {

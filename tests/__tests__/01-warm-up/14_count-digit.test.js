@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { countDigit } from "../../../src/01 (Warm Up)/14_count-digit.js";
+import { countDigit } from "../../../src/01-warm-up/14_count-digit.js";
 
 describe("countDigit", () => {
 	it("should return 3 for number 259", () => {
