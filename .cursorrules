@@ -5,3 +5,5 @@ For example:
 - "add greedy algorithm problem" instead of "implement greedy algorithm"
 
 Dry run problem reference:"src/01 (Warm Up)/05_second-largest-dry-run.md"
+
+Do not include multiple multiple test case dry runs in the dry-run file.
