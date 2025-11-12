@@ -11,6 +11,7 @@
 // * * * * * *
 
 const generatePattern = (n) => {
+	const pattern = [];
 	for (let i = 0; i < n; i++) {
 		let row = "";
 
@@ -18,9 +19,12 @@ const generatePattern = (n) => {
 			row = `${row} ${j > i + 1 ? " " : "*"}`;
 		}
 
-		console.log(row);
+		pattern.push(row);
 	}
+	return pattern;
 };
+
+export { generatePattern };
 
 const n = 5;
 generatePattern(n);

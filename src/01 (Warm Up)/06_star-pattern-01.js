@@ -11,6 +11,7 @@
 // * * * * * *
 
 const generatePattern = (n) => {
+	const pattern = [];
 	for (let i = 0; i < n; i++) {
 		let row = "";
 
@@ -20,9 +21,12 @@ const generatePattern = (n) => {
 
 		// trim() itself is O(k) where k = length of that row string — but that row string is already being built char by char inside your inner loop anyway.
 		// so adding trim does not change the Big-O at all.
-		console.log(row.trim());
+		pattern.push(row.trim());
 	}
+	return pattern;
 };
+
+export { generatePattern };
 
 const n = 4;
 generatePattern(n);

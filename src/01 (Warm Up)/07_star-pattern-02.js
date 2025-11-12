@@ -10,6 +10,7 @@
 // * * * *
 
 const generatePattern = (n) => {
+	const pattern = [];
 	for (let i = 0; i < n; i++) {
 		let row = "";
 
@@ -17,9 +18,12 @@ const generatePattern = (n) => {
 			row = `${row} *`;
 		}
 
-		console.log(row.trim());
+		pattern.push(row.trim());
 	}
+	return pattern;
 };
+
+export { generatePattern };
 
 const n = 4;
 generatePattern(n);

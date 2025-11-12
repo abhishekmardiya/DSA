@@ -36,6 +36,8 @@ const countDigit = (num) => {
 	return count;
 };
 
+export { countDigit };
+
 const num = 0;
 
 const ans = countDigit(num);

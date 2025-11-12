@@ -30,6 +30,8 @@ const findSecondLargest = (arr) => {
 	return secondLargest;
 };
 
+export { findSecondLargest };
+
 const arr = [4, 9, 12, 0, 12, 10, 8, 7, 1];
 
 const ans = findSecondLargest(arr);

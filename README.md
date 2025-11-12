@@ -29,3 +29,37 @@ This project contains various data structures and algorithms implemented in Java
 - All solutions are implemented in vanilla JavaScript
 - Each problem file is self-contained and can be run independently
 - Some problems include dry-run documentation for better understanding
+
+## 🧪 Test Suite
+
+### Run all tests
+
+```bash
+npm test
+```
+
+### Run tests in watch mode
+
+```bash
+npm run test:watch
+```
+
+### Run tests with coverage
+
+```bash
+npm run test:coverage
+```
+
+## Test Coverage
+
+All problems have comprehensive test cases covering:
+
+- Basic functionality
+- Edge cases
+- Boundary conditions
+- Error handling
+- Multiple scenarios
+
+## Test Library
+
+This project uses [Vitest](https://vitest.dev/), a fast and modern testing framework built on Vite.

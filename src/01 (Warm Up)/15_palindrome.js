@@ -30,6 +30,8 @@ const isPalindrome = (num) => {
 	return rev === original;
 };
 
+export { isPalindrome };
+
 const num = 121;
 
 const ans = isPalindrome(num);

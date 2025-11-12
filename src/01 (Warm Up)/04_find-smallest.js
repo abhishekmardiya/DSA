@@ -18,6 +18,8 @@ const findSmallest = (arr) => {
 	return smallest;
 };
 
+export { findSmallest };
+
 const arr = [5, 0, 7, -10, -8, 17, 1];
 
 const ans = findSmallest(arr);

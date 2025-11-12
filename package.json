@@ -2,9 +2,13 @@
 	"name": "dsa",
 	"version": "1.0.0",
 	"description": "Practice Data Structures and Algorithms in JavaScript",
+	"type": "module",
 	"scripts": {
 		"lint": "biome check --max-diagnostics=10000",
-		"format": "biome format --write"
+		"format": "biome format --write",
+		"test": "vitest run",
+		"test:watch": "vitest",
+		"test:coverage": "vitest run --coverage"
 	},
 	"keywords": [
 		"dsa",
@@ -15,6 +19,7 @@
 	"author": "Abhishek Mardiya",
 	"license": "ISC",
 	"devDependencies": {
-		"@biomejs/biome": "2.3.3"
+		"@biomejs/biome": "2.3.3",
+		"vitest": "^4.0.8"
 	}
 }

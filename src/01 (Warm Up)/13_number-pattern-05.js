@@ -11,6 +11,7 @@
 // 1 0 1 0 1
 
 const generatePattern = (n) => {
+	const pattern = [];
 	let current = 1;
 
 	for (let i = 0; i < n; i++) {
@@ -25,9 +26,12 @@ const generatePattern = (n) => {
 			current = current ? 0 : 1;
 		}
 
-		console.log(row);
+		pattern.push(row);
 	}
+	return pattern;
 };
+
+export { generatePattern };
 
 const n = 5;
 generatePattern(n);

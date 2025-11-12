@@ -18,6 +18,8 @@ const findLargest = (arr) => {
 	return largest;
 };
 
+export { findLargest };
+
 const arr = [5, 0, 7, -10, -8, 17, 1];
 
 const ans = findLargest(arr);
