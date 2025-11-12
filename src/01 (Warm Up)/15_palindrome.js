@@ -8,7 +8,7 @@
 // Output: true
 
 // Test Cases:
-// Input: -121 --> output: false (because "-121" !== "121-")
+// Input: -121 --> output: false (negative numbers are not palindromes)
 // Input: 259 --> output: false
 
 const isPalindrome = (num) => {
