@@ -22,16 +22,12 @@ const isPalindrome = (num) => {
 	let rev = 0;
 
 	while (num > 0) {
-		const rem = num % 10;
-		rev = rev * 10 + rem;
-		num = Math.floor(num / 10);
+		const rem = num % 10; // step - 1
+		rev = rev * 10 + rem; // step - 2
+		num = Math.floor(num / 10); // step - 3
 	}
 
-	if (rev === original) {
-		return true;
-	} else {
-		return false;
-	}
+	return rev === original;
 };
 
 const num = 121;
@@ -50,6 +46,6 @@ console.log("ans:", ans);
 // 2. Append the digit to the reversed number by multiplying current reversed by 10 and adding the digit. (rev * 10 + rem)
 // This effectively appends the extracted digit to the reversed number, similar to concatenation, without performing addition.
 
-// 3. To process the next digit, remove the last digit from the current number by dividing by 10 and using Math.floor for integer division. (Math.floor(num / 10))
+// 3. Remove the last digit from the current number by dividing by 10 and using Math.floor for integer division. (Math.floor(num / 10))
 
 // 4. After processing all digits, compare the reversed number with the original. If equal, it's a palindrome.

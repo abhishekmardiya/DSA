@@ -23,6 +23,10 @@ const findSecondLargest = (arr) => {
 		}
 	}
 
+	if (secondLargest === -Infinity) {
+		return "No second largest element found (all elements are the same)";
+	}
+
 	return secondLargest;
 };
 

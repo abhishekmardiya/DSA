@@ -8,7 +8,7 @@
 const findSmallest = (arr) => {
 	let smallest = arr[0]; // or let smallest = Infinity;
 
-	// Starting the loop from i = 1 (instead of 0) after initializing largest = arr[0] to avoid the redundant first comparison.
+	// Starting the loop from i = 1 (instead of 0) after initializing smallest = arr[0] to avoid the redundant first comparison.
 	for (let i = 1; i < arr.length; i++) {
 		if (arr[i] < smallest) {
 			smallest = arr[i];
