@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { isPalindrome } from "../../../src/01-warm-up/15_palindrome.js";
+import { isPalindrome } from "../../src/01-warm-up/15_palindrome.js";
 
 describe("isPalindrome", () => {
 	it("should return true for palindrome number 121", () => {

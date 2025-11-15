@@ -1,11 +1,11 @@
 import { describe, expect, it } from "vitest";
-import { generatePattern } from "../../../src/01-warm-up/08_number-pattern-01.js";
+import { generatePattern } from "../../src/01-warm-up/10_number-pattern-03.js";
 
-describe("generatePattern - Number Pattern 01", () => {
+describe("generatePattern - Number Pattern 03", () => {
 	it("should generate correct pattern for n=5", () => {
 		const n = 5;
 		const result = generatePattern(n);
-		const expected = ["1", "1 2", "1 2 3", "1 2 3 4", "1 2 3 4 5"];
+		const expected = ["1 2 3 4 5", "1 2 3 4", "1 2 3", "1 2", "1"];
 		expect(result).toEqual(expected);
 	});
 
@@ -19,14 +19,14 @@ describe("generatePattern - Number Pattern 01", () => {
 	it("should generate correct pattern for n=3", () => {
 		const n = 3;
 		const result = generatePattern(n);
-		const expected = ["1", "1 2", "1 2 3"];
+		const expected = ["1 2 3", "1 2", "1"];
 		expect(result).toEqual(expected);
 	});
 
 	it("should generate correct pattern for n=4", () => {
 		const n = 4;
 		const result = generatePattern(n);
-		const expected = ["1", "1 2", "1 2 3", "1 2 3 4"];
+		const expected = ["1 2 3 4", "1 2 3", "1 2", "1"];
 		expect(result).toEqual(expected);
 	});
 
@@ -36,12 +36,12 @@ describe("generatePattern - Number Pattern 01", () => {
 		expect(result).toHaveLength(n);
 	});
 
-	it("should have increasing number of numbers in each row", () => {
+	it("should have decreasing number of numbers in each row", () => {
 		const n = 5;
 		const result = generatePattern(n);
 		result.forEach((row, index) => {
 			const numberCount = row.split(" ").length;
-			expect(numberCount).toBe(index + 1);
+			expect(numberCount).toBe(n - index);
 		});
 	});
 

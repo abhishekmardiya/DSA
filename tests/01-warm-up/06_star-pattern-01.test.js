@@ -1,11 +1,11 @@
 import { describe, expect, it } from "vitest";
-import { generatePattern } from "../../../src/01-warm-up/07_star-pattern-02.js";
+import { generatePattern } from "../../src/01-warm-up/06_star-pattern-01.js";
 
-describe("generatePattern - Star Pattern 02", () => {
+describe("generatePattern - Star Pattern 01", () => {
 	it("should generate correct pattern for n=4", () => {
 		const n = 4;
 		const result = generatePattern(n);
-		const expected = ["*", "* *", "* * *", "* * * *"];
+		const expected = ["* * * *", "* * * *", "* * * *", "* * * *"];
 		expect(result).toEqual(expected);
 	});
 
@@ -19,14 +19,20 @@ describe("generatePattern - Star Pattern 02", () => {
 	it("should generate correct pattern for n=3", () => {
 		const n = 3;
 		const result = generatePattern(n);
-		const expected = ["*", "* *", "* * *"];
+		const expected = ["* * *", "* * *", "* * *"];
 		expect(result).toEqual(expected);
 	});
 
 	it("should generate correct pattern for n=5", () => {
 		const n = 5;
 		const result = generatePattern(n);
-		const expected = ["*", "* *", "* * *", "* * * *", "* * * * *"];
+		const expected = [
+			"* * * * *",
+			"* * * * *",
+			"* * * * *",
+			"* * * * *",
+			"* * * * *",
+		];
 		expect(result).toEqual(expected);
 	});
 
@@ -36,12 +42,12 @@ describe("generatePattern - Star Pattern 02", () => {
 		expect(result).toHaveLength(n);
 	});
 
-	it("should have increasing number of stars in each row", () => {
+	it("should return array where each row has n stars", () => {
 		const n = 4;
 		const result = generatePattern(n);
-		result.forEach((row, index) => {
+		result.forEach((row) => {
 			const starCount = (row.match(/\*/g) || []).length;
-			expect(starCount).toBe(index + 1);
+			expect(starCount).toBe(n);
 		});
 	});
 });

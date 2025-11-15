@@ -1,11 +1,11 @@
 import { describe, expect, it } from "vitest";
-import { generatePattern } from "../../../src/01-warm-up/09_number-pattern-02.js";
+import { generatePattern } from "../../src/01-warm-up/08_number-pattern-01.js";
 
-describe("generatePattern - Number Pattern 02", () => {
+describe("generatePattern - Number Pattern 01", () => {
 	it("should generate correct pattern for n=5", () => {
 		const n = 5;
 		const result = generatePattern(n);
-		const expected = ["1", "2 2", "3 3 3", "4 4 4 4", "5 5 5 5 5"];
+		const expected = ["1", "1 2", "1 2 3", "1 2 3 4", "1 2 3 4 5"];
 		expect(result).toEqual(expected);
 	});
 
@@ -19,14 +19,14 @@ describe("generatePattern - Number Pattern 02", () => {
 	it("should generate correct pattern for n=3", () => {
 		const n = 3;
 		const result = generatePattern(n);
-		const expected = ["1", "2 2", "3 3 3"];
+		const expected = ["1", "1 2", "1 2 3"];
 		expect(result).toEqual(expected);
 	});
 
 	it("should generate correct pattern for n=4", () => {
 		const n = 4;
 		const result = generatePattern(n);
-		const expected = ["1", "2 2", "3 3 3", "4 4 4 4"];
+		const expected = ["1", "1 2", "1 2 3", "1 2 3 4"];
 		expect(result).toEqual(expected);
 	});
 
@@ -45,15 +45,11 @@ describe("generatePattern - Number Pattern 02", () => {
 		});
 	});
 
-	it("should have same number repeated in each row", () => {
+	it("should start each row with 1", () => {
 		const n = 5;
 		const result = generatePattern(n);
-		result.forEach((row, index) => {
-			const numbers = row.split(" ");
-			const expectedNumber = String(index + 1);
-			numbers.forEach((num) => {
-				expect(num).toBe(expectedNumber);
-			});
+		result.forEach((row) => {
+			expect(row.startsWith("1")).toBe(true);
 		});
 	});
 });

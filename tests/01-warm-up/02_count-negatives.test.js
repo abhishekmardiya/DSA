@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { countNegatives } from "../../../src/01-warm-up/02_count-negatives.js";
+import { countNegatives } from "../../src/01-warm-up/02_count-negatives.js";
 
 describe("countNegatives", () => {
 	it("should return the correct count of negative numbers", () => {
