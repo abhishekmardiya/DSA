@@ -15,13 +15,13 @@ const getTargetElementIndex = (arr, target) => {
 	return -1;
 };
 
-export { getTargetElementIndex };
-
 const arr = [4, 2, 0, 10, 8, 30];
 const target = 30;
 
 const ans = getTargetElementIndex(arr, target);
 console.log("ans:", ans);
+
+export { getTargetElementIndex };
 
 // Time complexity: O(n)
 // Space complexity: O(1)

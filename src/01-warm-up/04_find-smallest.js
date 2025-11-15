@@ -18,12 +18,12 @@ const findSmallest = (arr) => {
 	return smallest;
 };
 
-export { findSmallest };
-
 const arr = [5, 0, 7, -10, -8, 17, 1];
 
 const ans = findSmallest(arr);
 console.log("ans:", ans);
+
+export { findSmallest };
 
 // Time complexity: O(n)
 // Space complexity: O(1)

@@ -1,6 +1,6 @@
 // Palindrome
 
-// Given an integer, determine if it is a palindrome.
+// Given an integer x, return true if x is a palindrome, and false otherwise.
 
 // `Palindrome`: A palindrome is a number that reads the same backward as forward.
 
@@ -30,12 +30,12 @@ const isPalindrome = (num) => {
 	return rev === original;
 };
 
-export { isPalindrome };
-
 const num = 121;
 
 const ans = isPalindrome(num);
 console.log("ans:", ans);
+
+export { isPalindrome };
 
 // Time complexity: O(log n)
 // Space complexity: O(1)

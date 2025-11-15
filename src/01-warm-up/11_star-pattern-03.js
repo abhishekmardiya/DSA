@@ -29,5 +29,7 @@ export { generatePattern };
 const n = 5;
 generatePattern(n);
 
+export { generatePattern };
+
 // Time complexity: O(n^2)
 // Space complexity: O(n)

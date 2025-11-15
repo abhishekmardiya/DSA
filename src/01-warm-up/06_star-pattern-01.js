@@ -26,10 +26,10 @@ const generatePattern = (n) => {
 	return pattern;
 };
 
-export { generatePattern };
-
 const n = 4;
 generatePattern(n);
+
+export { generatePattern };
 
 // Time complexity: O(n^2)
 // Space complexity: O(n) --> because only one row string of length n exists at a time and is printed then discarded.

@@ -36,12 +36,11 @@ const countDigit = (num) => {
 	return count;
 };
 
-export { countDigit };
-
-const num = 0;
-
+const num = 259;
 const ans = countDigit(num);
 console.log("ans:", ans);
+
+export { countDigit };
 
 // Time complexity: O(log n)
 // Space complexity: O(1)
