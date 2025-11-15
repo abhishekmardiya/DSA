@@ -25,6 +25,7 @@ This repository is beginner-friendly and explains all the basics within each pro
 | 13  | Number Pattern - 05 |
 | 14  | Count Digit         |
 | 15  | Palindrome          |
+| 16  | Reverse Integer     |
 
 ## 📝 Notes
 

@@ -10,4 +10,13 @@
 // Input: -123 --> Output: -321
 // Input: 120 --> Output: 21
 
-// Constraints: -231 <= x <= 231 - 1
+// Constraints: -2^31 <= x <= 2^31 - 1
+
+const reverseInteger = (num) => {};
+
+const num = 123;
+
+const ans = reverseInteger(num);
+console.log("ans:", ans);
+
+export { isPalindrome };

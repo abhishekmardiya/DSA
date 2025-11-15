@@ -16,6 +16,9 @@
 const isPalindrome = (num) => {
 	// If the number is negative or ends with zero, it's not a palindrome
 	// For example: 1233210 is not a palindrome as its reverse is 0123321, which is not a valid number.
+
+	// We do not add an early return for single digits numbers, as the main algorithm handles them efficiently.The loop exits immediately for single-digit inputs.This approach is simple and has no performance drawbacks.
+
 	if (num < 0 || (num !== 0 && num % 10 === 0)) {
 		return false;
 	}
