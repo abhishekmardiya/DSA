@@ -10,4 +10,6 @@
 
   _(not "implement greedy algorithm")_
 
-- **Refer to dry runs in:** `src/01-warm-up/05_second-largest-dry-run.md`.**Include only a single test case dry run per dry run file.**
+- **Refer to dry runs in:** `src/01-warm-up/05_second-largest-dry-run.md`.
+
+  Prefers dry runs for DSA problems to always be presented in a tabular format, without showing 'before' values or internal logic in the table.

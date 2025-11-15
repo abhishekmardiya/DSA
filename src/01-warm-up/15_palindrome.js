@@ -13,8 +13,9 @@
 // Input: 259 --> output: false
 
 const isPalindrome = (num) => {
-	// If the number is negative, it's not a palindrome. Zero is considered a palindrome
-	if (num < 0) {
+	// If the number is negative or ends with zero, it's not a palindrome
+	// For example: 1233210 is not a palindrome as its reverse is 0123321, which is not a valid number.
+	if (num < 0 || (num !== 0 && num % 10 === 0)) {
 		return false;
 	}
 
@@ -22,6 +23,7 @@ const isPalindrome = (num) => {
 	const original = num;
 	let rev = 0;
 
+	// Keep processing digits as long as there are digits left in the number
 	while (num > 0) {
 		const rem = num % 10; // step - 1
 		rev = rev * 10 + rem; // step - 2

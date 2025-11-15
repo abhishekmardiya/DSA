@@ -8,19 +8,23 @@
 // Input: 1210 --> output: false
 
 const isPalindrome = (num) => {
-	// If the number ends with zero, it's not a palindrome
-	// For example: 1233210 is not a palindrome as its reverse is 0123321, which is not a valid number.
-	if (num < 0 || (x !== 0 && num % 10 === 0)) {
+	if (num < 0 || (num !== 0 && num % 10 === 0)) {
 		return false;
 	}
 
-	// Store the original number for comparison
-	const original = num;
-	const revHalf = 0;
+	let revHalf = 0;
 
-	while (num > 0) {}
+	// Keep processing digits until the reversed half is greater than to the remaining original number.
+	// This ensures we've checked half the digits (works for both even and odd number lengths).
+	while (num > revHalf) {
+		const remainder = num % 10;
+		revHalf = revHalf * 10 + remainder;
+		num = Math.floor(num / 10);
+	}
 
-	return revHalf === original;
+	// First condition: for even numbers
+	// Second condition: for odd numbers, check if revHalf === num after removing the last digit of updated revHalf
+	return num === revHalf || num === Math.floor(revHalf / 10);
 };
 
 const num1 = 12321;
@@ -37,13 +41,25 @@ export { isPalindrome };
 // Space complexity: O(1)
 
 // Approach:
-// 1. Extract each digit from the end using modulo 10. (num % 10 = rem)
-// When you perform a modulo operation on any number with 10, the result gives the last digit of that number.
-// Example: 1234 % 10 = 4
+// 1. If the number is negative or ends with zero, return false (not a palindrome).
+// 2. Reverse only the last half of the digits by extracting the last digit of num (num % 10) and growing revHalf (revHalf * 10 + last digit).
+// 3. Continue until revHalf > num (i.e., reversed half exceeds remaining original).
+// 4. For an even number of digits, num === revHalf means palindrome and For an odd number of digits, ignore the middle digit by Math.floor(revHalf / 10), and check num === Math.floor(revHalf / 10).
 
-// 2. Append the digit to the reversed number by multiplying current reversed by 10 and adding the digit. (rev * 10 + rem)
-// This effectively appends the extracted digit to the reversed number, similar to concatenation, without performing addition.
+// Comparison with Regular Solution (15_palindrome.js):
 
-// 3. Remove the last digit from the current number by dividing by 10 and using Math.floor for integer division. (Math.floor(num / 10))
+// Time Complexity: Both O(log n)
+//   - Regular: Processes all digits of the number
+//   - Optimized: Processes approximately half the digits (~50% fewer iterations)
+//   - In practice, optimized version is faster due to early termination
 
-// 4. After processing all digits, compare the reversed number with the original. If equal, it's a palindrome.
+// Space Complexity: Both O(1)
+//   - Both use constant extra space (only a few variables)
+
+// Key Differences:
+// Regular solution reverses the entire number, then compares with original
+// Optimized solution only reverses half the digits, then compares halves directly
+
+// Example for 12321:
+//   Regular: Processes all 5 digits → rev = 12321 → compares with original
+//   Optimized: Processes ~2.5 digits → revHalf = 12, num = 123 → compares 123 === 12 (false) → checks 123 === Math.floor(12/10) = 1 (false) → continues → revHalf = 123, num = 12 → stops → compares 12 === 123 (false) → checks 12 === Math.floor(123/10) = 12 (true) ✓
