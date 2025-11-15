@@ -3,6 +3,7 @@
 // Given an integer x, return true if x is a palindrome, and false otherwise.
 
 // `Palindrome`: A palindrome is a number that reads the same backward as forward.
+// NOTE: Any single digit number (including 0) is a palindrome
 
 // Input: 121
 // Output: true
@@ -12,7 +13,7 @@
 // Input: 259 --> output: false
 
 const isPalindrome = (num) => {
-	// If the number is negative, return false
+	// If the number is negative, it's not a palindrome. Zero is considered a palindrome
 	if (num < 0) {
 		return false;
 	}

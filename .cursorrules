@@ -1,8 +1,0 @@
-# Guidelines for Git Commit Messages and Dry Run Files
-
-- Keep git commit messages short and concise.
-  Use the word "problem" instead of "implementation" in commit messages.
-  Example: "add greedy algorithm problem" (not "implement greedy algorithm")
-
-- Refer to dry run in: `src/01-warm-up/05_second-largest-dry-run.md`.
-  Include only a single test case dry run per dry run file.
