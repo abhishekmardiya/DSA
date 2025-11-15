@@ -1,6 +1,7 @@
 // Palindrome
 
 // Given an integer x, return true if x is a palindrome, and false otherwise.
+// LeetCode: https://leetcode.com/problems/palindrome-number/description
 
 // `Palindrome`: A palindrome is a number that reads the same backward as forward.
 // NOTE: Any single digit number (including 0) is a palindrome
