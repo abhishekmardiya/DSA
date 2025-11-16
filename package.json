@@ -14,10 +14,21 @@
 		"dsa",
 		"algorithms",
 		"javascript",
-		"learning"
+		"learning",
+		"testing",
+		"vitest",
+		"unit-testing",
+		"test-coverage"
 	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/abhishekmardiya/DSA.git"
+	},
+	"bugs": {
+		"url": "https://github.com/abhishekmardiya/DSA/issues"
+	},
 	"author": "Abhishek Mardiya",
-	"license": "ISC",
+	"license": "MIT",
 	"devDependencies": {
 		"@biomejs/biome": "2.3.3",
 		"@vitest/coverage-v8": "^4.0.8",
