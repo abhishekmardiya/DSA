@@ -9,6 +9,8 @@
 // Test Cases:
 // Input: 123 --> Output: 321
 // Input: 120 --> Output: 21
+// Input: 2147483647 --> Output: 0 (exceeds 32-bit positive integer range)
+// Input: -2147483648 --> Output: 0 (exceeds 32-bit negative integer range)
 
 // Constraints: -2^31 <= x <= 2^31 - 1
 
